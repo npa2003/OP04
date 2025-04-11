@@ -6,6 +6,9 @@ def sum_range(start, end):
 
 st = int(input("введите начальное значение "))
 en = int(input("введите коненчное значение "))
-total=sum_range(st, en)
+if st < en:
+    total=sum_range(st, en)
+else:
+    total = sum_range(en, st)
 print(f"Сумма: {total}")
 
